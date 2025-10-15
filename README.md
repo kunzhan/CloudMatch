@@ -1,6 +1,6 @@
 # CloudMatch: Weak-to-Strong Consistency Learning for Semi-Supervised Cloud Detection
 <!-- - [arXiv](https://arxiv.org/abs/2509.04729) -->
-- The Biome dataset was [split using 4-fold cross-validation](./split), and only the Red, Green, Blue, and Near-Infrared bands were used.
+- The Biome dataset was [split](./list), and only the Red, Green, and Blue bands were used.
 	- [Mask Download link](https://drive.google.com/file/d/16hXumZitYItkqnNssattDAU37r812EcL/view?usp=sharing)
 	- [Biome Dataset](https://landsat.usgs.gov/landsat-8-cloud-cover-assessment-validation-data)
 - SPARCS
