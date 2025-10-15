@@ -1,0 +1,25 @@
+# arguments for dataset
+dataset: pascal
+nclass: 2
+crop_size: 384
+data_root: /data/cloud/boime
+
+# arguments for training
+epochs: 80
+batch_size: 4 # per GPU x 4 GPUs
+lr: 0.001
+lr_multi: 10.0
+criterion:
+  name: CELoss
+  kwargs:
+    ignore_index: 240
+conf_thresh: 0.95
+thresh_init: 0.85
+# arguments for model
+model: deeplabv3plus
+backbone: resnet101
+replace_stride_with_dilation: [False, False, True]
+dilations: [6, 12, 18]
+beta: 0.996
+num_aug: 3
+flag_use_random_num_sampling: True
